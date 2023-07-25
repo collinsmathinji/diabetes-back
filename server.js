@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({ origin: 'https://frontend-diabetes-riwri0upb-collinsmathinji.vercel.app' }));
+app.use(cors({ allowedHeaders: 'https://frontend-diabetes-riwri0upb-collinsmathinji.vercel.app' }));
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
