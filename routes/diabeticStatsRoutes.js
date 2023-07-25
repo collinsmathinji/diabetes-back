@@ -9,7 +9,7 @@ const {
   updateDiabeticStat,
 } = require('../controllers/diabeticStatsController.js');
 
-const requireAuth = require('../middleware/requireAuth');
+const requireAuth = require('../middleware/requireAuth.js');
 
 
 router.use(requireAuth);
