@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 });
 
 
-app.use('/api/diabeticStats', diabeticStatsRoutes); // Update the route for diabeticStats
+app.use('/api/diabeticStats', diabeticStatsRoutes); 
 app.use('/api/user', userRoutes);
 
 
