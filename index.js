@@ -2,7 +2,7 @@ require('dotenv').config();
 const cors=require('cors')
 const express = require('express');
 const mongoose = require('mongoose');
-const diabeticStatsRoutes = require('./routes/diabeticStatsRoutes.js'); // Update the import to the diabeticStatsRoutes file
+const diabeticStatsRoutes = require('./routes/diabeticStatsRoutes.js'); 
 const userRoutes = require('./routes/user.js');
 
 // express app
