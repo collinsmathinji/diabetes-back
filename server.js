@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(CORS({ origin: 'https://frontend-diabetes.vercel.app' }))
+app.use(CORS({ origin: 'https://diabetes-back-l9ansgb07-collinsmathinji.vercel.app' }))
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
