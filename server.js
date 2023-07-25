@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+const CORS=require('cors')
 const express = require('express');
 const mongoose = require('mongoose');
 const diabeticStatsRoutes = require('./routes/diabeticStatsRoutes.js'); // Update the import to the diabeticStatsRoutes file
@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-
+app.use(CORS())
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
