@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://frontend-diabetes-git-main-collinsmathinji.vercel.app"
+  origin: "https://vercel.com/collinsmathinji/frontend-diabetes/91WQYXbPJRKX8Bc6eY5MATXBfXvT"
 }));
 
 app.use((req, res, next) => {
